@@ -1,0 +1,52 @@
+﻿<Window x:Class="myFirstWpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:myFirstWpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Initialized="Canvas_Initialized">
+        <Label Canvas.Top="40" Canvas.Left="40" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="1" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl1"></Label>
+        
+        <Label Canvas.Top="40" Canvas.Left="125" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="2" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl2"></Label>
+
+        <Label Canvas.Top="40" Canvas.Left="210" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="3" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl3" ></Label>
+
+        <Label Canvas.Top="125" Canvas.Left="40" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="4" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl4"></Label>
+
+        <Label Canvas.Top="125" Canvas.Left="125" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="5" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl5" ></Label>
+
+        <Label Canvas.Top="125" Canvas.Left="210" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="6" AllowDrop="True"
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown"  Name="lbl6"></Label>
+
+        
+        <Label Canvas.Top="210" Canvas.Left="40" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="7" AllowDrop="True" 
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown"  Name="lbl7"></Label>
+
+        <Label Canvas.Top="210" Canvas.Left="125" Width="80" Height="80" 
+               Background="Yellow" FontSize="46" Content="8" AllowDrop="True" 
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" Name="lbl8" ></Label>
+
+        <Label Canvas.Top="210" Canvas.Left="210" Width="80" Height="80" 
+               Background="Red" FontSize="46" Content="" AllowDrop="True" 
+               DragOver="Label_DragOver" Drop="Label_Drop" MouseDown="Label_MouseDown" 
+               Name="lbl9" ></Label>
+        
+    <Button x:Name="btnStart" Canvas.Bottom="40" FontSize="46" Canvas.Right="40"  
+            Height="80" Width="100" Content="Start" Click="btnStart_Click"/>
+    </Canvas>
+
+</Window>
